@@ -16,7 +16,7 @@
 	<title><%= content_for?(:title) ? yield(:title) : "Backsource" %></title>
 
 	<!-- Included CSS Files -->
-	<%= stylesheet_link_tag    "application" %>
+	<%= stylesheet_link_tag    "application", media: "all" %>
 
 	<!-- Included JS Files  -->
 	<%= javascript_include_tag "application" %>

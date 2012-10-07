@@ -3,7 +3,9 @@ window.Backsource =
   Collections: {}
   Views: {}
   Routers: {}
-  init: -> alert 'Hello from Backbone!'
+  init: ->
+    new Backsource.Routers.Links()
+    Backbone.history.start()
 
 $(document).ready ->
   Backsource.init()

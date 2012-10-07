@@ -1,0 +1,8 @@
+<h1>BackSource</h1>
+<h2>Your Backbone.js Resource</h2>
+
+<ul>
+  <% for link in @links.models: %>
+    <li><a href="<%= link.get('url') %>"><%= link.get('title') %></a></li>
+  <% end %>
+</ul>
