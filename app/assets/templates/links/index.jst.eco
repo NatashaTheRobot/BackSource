@@ -1,10 +1,22 @@
-<h1>BackSource</h1>
-<h2>Your Backbone.js Resource</h2>
+<div class="row">
+  <div class="four columns offset-by-one">
+    <h1>BackSource</h1>
+    <em>Submit a Great Backbone.js Resource</em>
+  </div>
+</div>
 
-<form id="new_link">
-  <input type="text" name="title" id="new_link_title">
-  <input type="text" name="url" id="new_link_url">
-  <input type="submit" value="Add">
-</form>
+<div class="row" id="form">
+  <div class="ten columns offset-by-one">
+    <form id="new_link">
+      Title: <input type="text" name="title" id="new_link_title" placeholder="Resource Title">
+      URL: <input type="url" name="url" id="new_link_url" placeholder="http://backboneresource.com">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
 
-<ul id="links"></ul>
+<div class="row">
+  <div class="eleven columns offset-by-one">
+    <ul id="links"></ul>
+  </div>
+</div>
