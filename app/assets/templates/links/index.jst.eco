@@ -1,8 +1,10 @@
 <h1>BackSource</h1>
 <h2>Your Backbone.js Resource</h2>
 
-<ul>
-  <% for link in @links.models: %>
-    <li><a href="<%= link.get('url') %>"><%= link.get('title') %></a></li>
-  <% end %>
-</ul>
+<form id="new_link">
+  <input type="text" name="title" id="new_link_title">
+  <input type="text" name="url" id="new_link_url">
+  <input type="submit" value="Add">
+</form>
+
+<ul id="links"></ul>

@@ -5,7 +5,7 @@ window.Backsource =
   Routers: {}
   init: ->
     new Backsource.Routers.Links()
-    Backbone.history.start()
+    Backbone.history.start(pushState: true)
 
 $(document).ready ->
   Backsource.init()

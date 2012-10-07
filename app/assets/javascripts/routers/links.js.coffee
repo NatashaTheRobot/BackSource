@@ -4,7 +4,7 @@ class Backsource.Routers.Links extends Backbone.Router
 
   initialize: ->
     @collection = new Backsource.Collections.Links()
-    @collection.fetch()
+    @collection.reset($('#container').data('links'))
 
   index: ->
     view = new Backsource.Views.LinksIndex(collection: @collection)
