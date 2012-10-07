@@ -1,12 +1,16 @@
 <div class="row">
-  <div class="five columns offset-by-one">
+  <div class="six columns offset-by-one">
     <h1>BackSource</h1>
     <em>Community-Recommended Backbone.js Resources</em>
   </div>
 </div>
 
+<div class="row">
+  <div class="six columns offset-by-one" id='notice'></div>
+</div>
+
 <div class="row" id="form">
-  <div class="five columns offset-by-one">
+  <div class="six columns offset-by-one">
     <form id="new_link">
       Title: <input type="text" name="title" id="new_link_title" placeholder="Backbone.js Resource">
       URL: <input type="url" name="url" id="new_link_url" placeholder="http://backboneresource.com">

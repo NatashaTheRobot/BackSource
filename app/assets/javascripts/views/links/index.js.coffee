@@ -22,12 +22,14 @@ class Backsource.Views.LinksIndex extends Backbone.View
     attributes = title: $('#new_link_title').val(), url: $('#new_link_url').val()
     @collection.create attributes,
       wait: true
-      success: -> $('#new_link')[0].reset()
+      success: ->
+        $('#new_link')[0].reset()
+        $('#notice').remove() if $('#notice')
       error: @handleError
 
   handleError: (link, response) ->
     if response.status == 422
       errors = $.parseJSON(response.responseText).errors
       for attributes, messages of errors
-        alert "#{attributes} #{message}" for message in messages
+        $("#notice").html("<div class='alert-box alert'>#{attributes} #{messages}</div>")
 
