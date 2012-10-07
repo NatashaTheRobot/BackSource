@@ -24,7 +24,7 @@ class Backsource.Views.LinksIndex extends Backbone.View
       wait: true
       success: ->
         $('#new_link')[0].reset()
-        $('#notice').remove() if $('#notice')
+        $('.alert-box.alert').remove() if $('.alert-box.alert')
       error: @handleError
 
   handleError: (link, response) ->
